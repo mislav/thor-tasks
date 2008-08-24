@@ -5,18 +5,9 @@ Getting started: install [Thor](http://github.com/wycats/thor/tree/master) if yo
 
     gem install wycats-thor
 
-You can install these tasks directly from Web or, if you clone the repo, from the filesystem:
+You can install these tasks directly from the web:
 
-    # install from Web
     thor install http://github.com/mislav/thor-tasks/tree/master/github.thor?raw=true
-    # from local file
-    thor install github.thor
-
-Thor will ask you to name your import. You can later use this name to update installed tasks:
-
-    thor update GitHub
-
-On update, Thor will try to fetch the tasks from the same source you specified during install.
 
 If you want to inspect and try out the tasks **without** installing, you should clone the repo:
 
@@ -24,9 +15,18 @@ If you want to inspect and try out the tasks **without** installing, you should 
     cd thor-tasks
     thor list
 
-This command will get you a list of tasks together with their usage information.
+That command will get you a list of tasks together with their usage information. So, if you like them:
 
-And now for a bit of fun.    
+    thor install github.thor --as GitHub
+
+Later you'll wish to update:
+
+    git pull
+    thor update GitHub
+
+On update, Thor will try to fetch the tasks from the same source you specified during install.
+
+That's it. And now for a bit of fun.    
 
 
 GitHub tasks
