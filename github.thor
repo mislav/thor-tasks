@@ -1,6 +1,4 @@
 #!/usr/bin/env ruby
-require 'rubygems'
-require 'thor'
 
 class Github < Thor
   desc "track <user> [<branch-name>]", "track a fork belonging to <user>"
@@ -103,5 +101,3 @@ class Github < Thor
       end
     end
 end
-
-Github.start if __FILE__ == $0
